@@ -20,16 +20,11 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 # JAVA HOME
 export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
-# boot2docker goods
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/matt/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
-
 # $GOPATH
 export GOPATH=$HOME/Go
 
 # Use atom for Ctrl+x+e
-EDITOR="subl"
+EDITOR="vi"
 
 # function subl() {
 #   atom "$@"
