@@ -30,33 +30,18 @@ brew install homebrew/dupes/grep
 # Install other useful binaries
 binaries=(
   graphicsmagick
-  boot2docker
-  webkit2png
-  phantomjs
-  rename
-  zopfli
-  ffmpeg
   python
   mongo
-  sshfs
   trash
   node
-  tree
   hub
-  ack
   git
   hub
-  fig
   go
 )
 
 # Install the binaries
 brew install ${binaries[@]}
-
-# Add osx specific command line tools
-if test ! $(which subl); then
-  ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
-fi
 
 # Install spot
 if test ! $(which spot); then

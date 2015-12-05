@@ -11,7 +11,7 @@ apps=(
   atom
   crashplan
   dropbox
-  github
+  dockertoolbox
   google-chrome
   google-drive
   java
