@@ -38,6 +38,8 @@ binaries=(
   git
   hub
   go
+  zsh
+  zsh-completions
 )
 
 # Install the binaries
@@ -47,6 +49,9 @@ brew install ${binaries[@]}
 if test ! $(which spot); then
   curl -L https://raw.github.com/guille/spot/master/spot.sh -o /usr/local/bin/spot && chmod +x /usr/local/bin/spot
 fi
+
+# Install oh-my-zsh
+curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
 
 # Create a $GOPATH
 mkdir -p $HOME/Go
