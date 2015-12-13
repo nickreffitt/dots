@@ -124,8 +124,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 echo ""
 echo "Setting trackpad & mouse speed to a reasonable number"
-defaults write -g com.apple.trackpad.scaling 2
-defaults write -g com.apple.mouse.scaling 2.5
+defaults write -g com.apple.trackpad.scaling 1
+defaults write -g com.apple.mouse.scaling 1
 
 echo ""
 echo "Turn off keyboard illumination when computer is not used for 5 minutes"
