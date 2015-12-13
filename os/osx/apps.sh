@@ -7,6 +7,7 @@ set -eu
 
 # Apps
 apps=(
+  1password
   atom
   crashplan
   dropbox

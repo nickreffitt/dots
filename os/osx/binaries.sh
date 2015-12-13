@@ -12,7 +12,7 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew
-brew update 
+brew update
 brew tap caskroom/cask
 brew install brew-cask
 
