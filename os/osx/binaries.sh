@@ -33,6 +33,7 @@ brew install homebrew/dupes/grep
 binaries=(
   graphicsmagick
   python
+  mackup
   mongo
   trash
   node
