@@ -131,6 +131,10 @@ echo ""
 echo "Turn off keyboard illumination when computer is not used for 5 minutes"
 defaults write com.apple.BezelServices kDimTime -int 300
 
+echo ""
+echo "Invert fn keys"
+defaults write -g com.apple.keyboard.fnState -bool true
+
 ###############################################################################
 # Screen
 ###############################################################################
