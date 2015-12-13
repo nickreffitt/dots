@@ -107,6 +107,14 @@ echo "Disabling press-and-hold for keys in favor of a key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 echo ""
+echo "Disable find cursor magnification"
+defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool YES
+
+echo ""
+echo "Enable three-finger drag"
+defaults write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGesture -int 1
+
+echo ""
 echo "Setting a blazingly fast keyboard repeat rate (ain't nobody got time fo special chars while coding!)"
 defaults write NSGlobalDomain KeyRepeat -int 0
 
