@@ -9,8 +9,7 @@ WIP bootstrapping library for OSX
 One-liner:
 
 ```
-(mkdir -p /tmp/dots && cd /tmp/dots && curl -L
-https://github.com/nickreffitt/dots/archive/master.tar.gz | tar zx --strip 1 && sh ./install.sh)
+(mkdir -p /tmp/dots && cd /tmp/dots && curl -L https://github.com/nickreffitt/dots/archive/master.tar.gz | tar zx --strip 1 && sh ./install.sh)
 ```
 
 ## Post-Installation Steps
