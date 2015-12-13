@@ -299,10 +299,10 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 0;"name" = "MENU_EXPRESSION";}' \
 	'{"enabled" = 0;"name" = "MENU_WEBSEARCH";}' \
 	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}'
-	
+
 echo ""
 echo "Load new settings before rebuilding the index"
-killall mds > /dev/null 2>&1
+#killall mds > /dev/null 2>&1
 
 echo ""
 echo "Make sure indexing is enabled for the main volume"
@@ -313,7 +313,7 @@ echo "Rebuild the index from scratch"
 sudo mdutil -E / > /dev/null
 
 ###############################################################################
-# Terminal & iTerm 2 
+# Terminal & iTerm 2
 ###############################################################################
 
 echo ""
@@ -384,10 +384,11 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 # Kill affected applications
 ###############################################################################
 
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
-	"Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
-	"Transmission" "Twitter" "iCal"; do
-	killall "${app}" > /dev/null 2>&1
-done
+#for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+#	"Dock" "Finder" "Google Chrome" "Google Chrome Canary" "Mail" "Messages" \
+#	"Opera" "Safari" "SizeUp" "Spectacle" "SystemUIServer" "Terminal" \
+#	"Transmission" "Twitter" "iCal"; do
+#	killall "${app}" > /dev/null 2>&1
+#done
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
