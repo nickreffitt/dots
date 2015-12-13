@@ -7,7 +7,6 @@ set -eu
 
 # Apps
 apps=(
-  alfred
   atom
   crashplan
   dropbox
@@ -57,7 +56,6 @@ main() {
 
   # Install homebrew-cask
   echo "installing cask..."
-  brew tap phinze/homebrew-cask
   brew install brew-cask
 
   # Tap alternative versions
@@ -78,8 +76,6 @@ main() {
   echo "installing atom plugins..."
   apm install ${atom[@]}
 
-  # link with alfred
-  alfred
   cleanup
 }
 
@@ -88,10 +84,6 @@ homebrew() {
     echo "Installing homebrew..."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
-}
-
-alfred() {
-  brew cask alfred link
 }
 
 cleanup() {
