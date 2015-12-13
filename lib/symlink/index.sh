@@ -36,7 +36,7 @@ function symlink {
   done
 
   if [[ -e $1 ]] && [[ -n $2 ]]; then
-    ln -s $1 $2boot
+    ln -s $1 $2
   else
     usage
   fi
