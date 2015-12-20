@@ -9,6 +9,7 @@ set -eu
 apps=(
   1password
   atom
+  cleanmymac
   crashplan
   dropbox
   dockertoolbox
