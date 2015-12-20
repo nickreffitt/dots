@@ -405,6 +405,6 @@ defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
 
 echo ""
 echo "Change host name of machine"
-sudo scutil -set HostName tiffer
+sudo scutil --set HostName tiffer
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
