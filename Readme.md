@@ -4,12 +4,18 @@
 
 WIP bootstrapping library for OSX
 
-## Installation
+## Download
 
 One-liner:
 
-```
+```bash
 (mkdir -p /tmp/dots && cd /tmp/dots && curl -L https://github.com/nickreffitt/dots/archive/master.tar.gz | tar zx --strip 1 && sh ./install.sh)
+```
+
+## Installation
+
+```bash
+dots osx boot
 ```
 
 ## Post-Installation Steps
